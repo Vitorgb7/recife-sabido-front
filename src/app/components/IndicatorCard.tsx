@@ -44,7 +44,7 @@ export default function IndicatorCard({ title, value, color }: IndicatorCardProp
             color: "#000",
             top: "50%",
             left: "50%",
-            transform: "translate(26%, -410%)", // Centraliza exatamente
+            transform: "translate(36%, -400%)", // Centraliza exatamente
             fontWeight: "bold",
           }}
         >
