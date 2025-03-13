@@ -1,0 +1,28 @@
+{
+    "educacao": {
+      "titulo": "Educação",
+      "descricao": "Informações sobre educação em Recife.",
+      "grafico": [
+        { "nome": "Escolas", "valor": 120 },
+        { "nome": "Universidades", "valor": 15 },
+        { "nome": "Alunos", "valor": 50000 }
+      ]
+    },
+    "transporte": {
+      "titulo": "Transporte",
+      "descricao": "Dados sobre o transporte público em Recife.",
+      "grafico": [
+        { "nome": "Ônibus", "valor": 800 },
+        { "nome": "Estações de Metrô", "valor": 25 }
+      ]
+    },
+    "saude": {
+      "titulo": "Saúde",
+      "descricao": "Informações sobre hospitais e unidades de saúde em Recife.",
+      "grafico": [
+        { "nome": "Hospitais", "valor": 30 },
+        { "nome": "Unidades Básicas de Saúde", "valor": 200 }
+      ]
+    }
+  }
+  
