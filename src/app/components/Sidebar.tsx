@@ -4,9 +4,12 @@ import "../styles/sidebar.css";
 export default function Sidebar() {
   return (
     <div className="sidebar">
-      <h2 className="sidebar-title">
-        Recife <span className="sidebar-highlight">Sabido</span>
-      </h2>
+      <div className="sidebar-header">
+        <img src="/logo-sabido.jpeg" alt="logo" className="sidebar-logo" />
+        <h2 className="sidebar-title">
+          Recife <span className="sidebar-highlight">Sabido</span>
+        </h2>
+      </div>
       <nav className="sidebar-nav">
         <Link href="/" className="sidebar-link active">
           Dashboard
