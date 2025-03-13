@@ -1,7 +1,6 @@
 "use client";
 
 import "../styles/chatbot.css";
-
 import { useState } from "react";
 import { getChatbotResponse } from "../services/chatbotService";
 
@@ -18,28 +17,27 @@ const Chatbot = () => {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 w-80 bg-white shadow-lg rounded-lg p-4 border">
-      <h2 className="text-lg font-bold mb-2">Chatbot</h2>
-      <div className="h-40 overflow-y-auto border p-2 rounded">
+    <div className="chatbot-widget">
+      <div className="chatbot-header">
+        <img src="/assistente.png" alt="Aurora" className="chatbot-avatar" />
+        <h2>Olá, eu sou a Aurora, pergunte-me o que quiser!</h2>
+      </div>
+      <div className="chatbot-messages">
         {chat.map((msg, index) => (
-          <div key={index} className="mb-2">
-            <p className="text-blue-600 font-semibold">Você: {msg.user}</p>
-            <p className="text-gray-700">Bot: {msg.bot}</p>
+          <div key={index} className={`chatbot-message ${msg.user ? "user" : "bot"}`}>
+            <p className={`chatbot-bubble ${msg.user ? "user" : "bot"}`}>{msg.user || msg.bot}</p>
           </div>
         ))}
       </div>
-      <div className="mt-3 flex">
+      <div className="chatbot-input-container">
         <input
           type="text"
           value={userMessage}
           onChange={(e) => setUserMessage(e.target.value)}
           placeholder="Digite sua mensagem..."
-          className="flex-1 p-2 border rounded-l"
+          className="chatbot-input"
         />
-        <button
-          onClick={handleSendMessage}
-          className="bg-blue-500 text-white px-4 py-2 rounded-r"
-        >
+        <button onClick={handleSendMessage} className="chatbot-send-button">
           Enviar
         </button>
       </div>
