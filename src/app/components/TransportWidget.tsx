@@ -26,10 +26,12 @@ export default function TransportWidget() {
           {transportData.map((item, index) => (
             <tr key={index}>
               <td>{item.city}</td>
-              <td className={`status ${item.color}`}>{item.status}</td>
+              <td>
+                <span className={`status ${item.color}`}>{item.status}</span>
+              </td>
               <td>{item.time}</td>
               <td>
-                <button className="map-button">Ver no mapa</button>
+                <button className="map-button">Ver</button>
               </td>
             </tr>
           ))}
