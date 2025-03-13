@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { RadialBarChart, RadialBar } from "recharts";
 
@@ -9,23 +9,48 @@ interface IndicatorCardProps {
 }
 
 export default function IndicatorCard({ title, value, color }: IndicatorCardProps) {
-  const data = [{ name: title, value }];
+  const data = [{ name: title, value }, { name: "Restante", value: 100 - value }];
 
   return (
-    <div className="bg-white p-5 shadow rounded-lg flex flex-col items-center">
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <RadialBarChart
-        width={150}
-        height={150}
-        innerRadius="80%"
-        outerRadius="100%"
-        data={data}
-        startAngle={90}
-        endAngle={450}
-      >
-        <RadialBar label={{ position: "insideStart", fill: "#000" }} dataKey="value" fill={color} />
-      </RadialBarChart>
-      <p className="text-2xl font-bold mt-2">{value}%</p>
+    <div className="bg-white p-5 shadow-md rounded-lg flex flex-col items-center w-[180px]">
+      <h3 className="text-md font-bold mb-2 text-black">{title}</h3>
+      
+      {/* Container do gráfico */}
+      <div className="relative w-[140px] h-[140px] flex items-center justify-center">
+        {/* Gráfico */}
+        <RadialBarChart
+          width={140}
+          height={140}
+          innerRadius="75%"
+          outerRadius="100%"
+          barSize={10}
+          data={data}
+          startAngle={90}
+          endAngle={450}
+        >
+          <RadialBar
+            dataKey="value"
+            fill={color}
+            cornerRadius={50}
+            background={{ fill: "#EAECEF" }}
+          />
+        </RadialBarChart>
+
+        {/* Número 100% centralizado */}
+        <div
+          className="absolute text-3xl font-bold"
+          style={{
+            fontFamily: "Montserrat, sans-serif",
+            color: "#000",
+            top: "50%",
+            left: "50%",
+            transform: "translate(26%, -410%)", // Centraliza exatamente
+            fontWeight: "bold",
+          }}
+        >
+          {value}%
+        </div>
+      </div>
     </div>
   );
 }

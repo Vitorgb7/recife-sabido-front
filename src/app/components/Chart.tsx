@@ -1,8 +1,15 @@
-"use client"; 
+"use client";
 
 import "../styles/dashboard.css";
-
-import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  CartesianGrid,
+} from "recharts";
 
 const data = [
   { name: "Dez", value: 2 },
@@ -15,12 +22,12 @@ const data = [
 
 export default function Chart() {
   return (
-    <div className="bg-white p-5 shadow rounded-lg">
-      <h3 className="text-lg font-semibold mb-3">Informações de Saúde Pública</h3>
+    <div className="chart-container">
+      <h3 className="chart-title">Informações de Saúde Pública</h3>
       <ResponsiveContainer width="100%" height={250}>
-        <LineChart data={data}>
-          <XAxis dataKey="name" />
-          <YAxis />
+        <LineChart data={data} margin={{ top: 10, right: 20, left: -10, bottom: 0 }}>
+          <XAxis dataKey="name" tick={{ fontSize: 12, fill: "#333" }} />
+          <YAxis tick={{ fontSize: 12, fill: "#333" }} />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Line type="monotone" dataKey="value" stroke="#3b82f6" strokeWidth={2} />
