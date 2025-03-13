@@ -25,7 +25,7 @@ export default function Sidebar() {
           Educação
         </Link>
         <div className="sidebar-section">Schedule</div>
-        <Link href="/aurora" className="sidebar-link">
+        <Link href="/chat" className="sidebar-link">
           Aurora
         </Link>
         <Link href="/reports" className="sidebar-link notification">
