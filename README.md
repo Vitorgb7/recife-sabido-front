@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Recife Sabido – Dados Abertos ao Alcance de Todos  
 
-## Getting Started
+## 🏙️ Introdução  
 
-First, run the development server:
+Você já tentou acessar dados públicos do Recife e se sentiu perdido ou desmotivado? A cidade possui um imenso repositório de dados, mas muitas vezes eles estão espalhados, pouco acessíveis e difíceis de entender.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**O Recife Sabido foi criado para mudar essa realidade!**  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Nosso objetivo é transformar o jeito como cidadãos interagem com dados públicos, tornando essas informações **acessíveis, úteis e interativas** por meio de um **Dashboard dinâmico e um Chatbot inteligente**.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ❌ O Problema  
 
-## Learn More
+Atualmente, os dados abertos do Recife enfrentam três desafios principais:  
 
-To learn more about Next.js, take a look at the following resources:
+1. **Dificuldade de acesso** – As informações estão fragmentadas em diferentes portais e formatos técnicos.  
+2. **Baixa usabilidade** – Relatórios extensos e tabelas brutas não facilitam a interpretação para o cidadão comum.  
+3. **Falta de interatividade** – Não há uma maneira simples e intuitiva de explorar os dados sem conhecimento técnico.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Isso gera **desinformação** e **desmotivação**, dificultando a participação ativa da população nas decisões sobre a cidade.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Nossa Solução  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O **Recife Sabido** oferece duas ferramentas principais para democratizar o acesso às informações públicas:  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📊 **Dashboard Interativo**  
+- Exibe dados municipais de forma visual e intuitiva.  
+- Informações sobre **saúde, educação, segurança e infraestrutura** em gráficos dinâmicos.  
+- Permite filtros para personalizar a pesquisa e obter insights específicos.  
+
+### 🤖 **Chatbot Inteligente**  
+- Responde perguntas em **linguagem natural**.  
+- Usa IA para buscar **dados atualizados** em tempo real.  
+- Exemplos de perguntas possíveis:  
+  - “Quantos postos de saúde existem no Recife?”  
+  - “Quais escolas públicas ainda têm vagas disponíveis no meu bairro?”  
+- **Acessível via Web e Mobile**, tornando a experiência ágil e prática.  
+
+Com essas duas ferramentas, **qualquer pessoa pode acessar informações relevantes de maneira rápida e sem burocracia**.  
+
+---
+
+## 🎯 Benefícios  
+
+✅ **Transparência & Acessibilidade** – Qualquer cidadão pode acessar dados públicos sem barreiras.  
+✅ **Empoderamento Cidadão** – As pessoas se tornam mais informadas e participativas nas decisões da cidade.  
+✅ **Inclusão Digital** – Interface intuitiva para todos os níveis de conhecimento.  
+✅ **Facilidade de Uso** – Basta perguntar ao chatbot ou visualizar no dashboard, sem necessidade de entender tabelas complexas.  
+
+---
+
+## 🔮 O Futuro  
+
+O **Recife Sabido** é só o começo! 🚀  
+
+### 🔜 **Próximos passos**  
+- **Mais dados disponíveis** – Expansão para incluir **segurança, transporte e meio ambiente**.  
+- **Novas funcionalidades** – Integração com **alertas em tempo real** e notificações personalizadas.  
+- **Escalabilidade** – A tecnologia pode ser adaptada para **outras cidades**, promovendo o acesso à informação em diferentes regiões.  
+
+### 📢 **Chamada para Ação**  
+
+Nosso compromisso é claro: **tornar os dados públicos verdadeiramente acessíveis e úteis para todos os recifenses**.  
+
+Junte-se a nós nessa missão! Vamos fazer do Recife Sabido a **porta de entrada para um Recife mais inteligente, conectado e transparente para todos**.  
+
+📩 **Quer contribuir?** Entre em contato conosco e faça parte dessa transformação!  
+
+---
+
+## ⚙️ Tecnologias Utilizadas  
+
+- **Protótipo:** Figma   
+- **Frontend:** Next.js
+- **IA do Chatbot:** Llama + NLP para linguagem natural  
+- **Banco de Dados vetorial:** Qdrant
+- **Visualização de Dados:** Recharts  
+
+---
+
+## 📄 Licença  
+
+Este projeto está sob a licença **MIT**. Isso significa que você pode usá-lo, modificá-lo e distribuí-lo livremente, desde que mantenha os créditos aos desenvolvedores originais.  
+
+---
+
+## 📞 Contato  
+
+Tem dúvidas, sugestões ou quer saber mais sobre o **Recife Sabido**? Fale conosco:  
+
+📧 Email: contato@recifesabido.com  
+🐦 Twitter: [@RecifeSabido](https://twitter.com/RecifeSabido)  
+🌐 Site Oficial: [www.recifesabido.com](https://www.recifesabido.com)  
+
+🚀 **Juntos, podemos tornar Recife mais transparente e acessível para todos!**  
