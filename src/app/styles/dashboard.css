@@ -1,14 +1,16 @@
 .dashboard-container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 /* Área principal do Dashboard */
 .main-dashboard {
   flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Widgets laterais (Transporte + Mensagens) */
 .side-widgets {
   flex: 1;
   display: flex;
@@ -21,5 +23,37 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px; /* Aumenta o espaço entre os indicadores e o gráfico */
 }
+
+/* Container do gráfico */
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Define um tamanho máximo para manter o alinhamento */
+  margin: auto; /* Centraliza no layout */
+}
+
+/* Título do gráfico */
+.chart-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+/* Personalização do gráfico */
+.recharts-cartesian-axis-tick {
+  font-size: 12px;
+  color: #555;
+}
+
+.recharts-tooltip-label {
+  font-weight: bold;
+  color: #3b82f6;
+}
+
