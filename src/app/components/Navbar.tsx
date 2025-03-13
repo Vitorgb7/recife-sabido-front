@@ -9,7 +9,7 @@ export default function Navbar() {
       <input className="navbar-search" placeholder="Pesquisar" />
       <div className="navbar-icons">
         <FaBell className="navbar-bell" />
-        <span className="navbar-notification-badge">2</span>
+        {/* <span className="navbar-notification-badge">2</span> */}
         <div className="navbar-profile">
           <img src="/avantar.png" alt="User Avatar" className="navbar-avatar" />
           <span className="navbar-username">João Campos</span>
