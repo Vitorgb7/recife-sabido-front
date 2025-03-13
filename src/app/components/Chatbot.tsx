@@ -1,20 +1,25 @@
 "use client";
 
 import "../styles/chatbot.css";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { getChatbotResponse } from "../services/chatbotService";
 
 const Chatbot = () => {
   const [userMessage, setUserMessage] = useState("");
   const [chat, setChat] = useState<{ user: string; bot: string }[]>([]);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   const handleSendMessage = async () => {
     if (!userMessage.trim()) return;
 
     const response = await getChatbotResponse(userMessage);
-    setChat([...chat, { user: userMessage, bot: response }]);
+    setChat((prevChat) => [...prevChat, { user: userMessage, bot: response }]);
     setUserMessage("");
   };
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [chat]);
 
   return (
     <div className="chatbot-widget">
@@ -22,13 +27,25 @@ const Chatbot = () => {
         <img src="/assistente.png" alt="Aurora" className="chatbot-avatar" />
         <h2>Olá, eu sou a Aurora, pergunte-me o que quiser!</h2>
       </div>
+
       <div className="chatbot-messages">
         {chat.map((msg, index) => (
-          <div key={index} className={`chatbot-message ${msg.user ? "user" : "bot"}`}>
-            <p className={`chatbot-bubble ${msg.user ? "user" : "bot"}`}>{msg.user || msg.bot}</p>
+          <div key={index} className="chatbot-message-container">
+            {msg.user && (
+              <div className="chatbot-message user">
+                <p className="chatbot-bubble user">{msg.user}</p>
+              </div>
+            )}
+            {msg.bot && (
+              <div className="chatbot-message bot">
+                <p className="chatbot-bubble bot">{msg.bot}</p>
+              </div>
+            )}
           </div>
         ))}
+        <div ref={messagesEndRef} />
       </div>
+
       <div className="chatbot-input-container">
         <input
           type="text"
