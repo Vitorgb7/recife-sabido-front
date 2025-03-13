@@ -1,0 +1,25 @@
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Área principal do Dashboard */
+.main-dashboard {
+  flex: 2;
+}
+
+/* Widgets laterais (Transporte + Mensagens) */
+.side-widgets {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Grid dos cards principais */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}

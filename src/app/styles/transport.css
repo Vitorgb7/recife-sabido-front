@@ -1,0 +1,61 @@
+.transport-widget {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .widget-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .transport-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transport-table th,
+  .transport-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .transport-table th {
+    background: #f4f7fc;
+    font-weight: 600;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .red {
+    background-color: #ef4444;
+  }
+  
+  .yellow {
+    background-color: #facc15;
+  }
+  
+  .green {
+    background-color: #22c55e;
+  }
+  
+  .map-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .map-button:hover {
+    background-color: #1d4ed8;
+  }
+  
